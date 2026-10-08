@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartoon Studio 🎬</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <div>
+    <h2>🎬 Cartoon Studio</h2>
+    <span>Create your own cartoon series</span>
+  </div>
+
+  <button id="newProject">＋ New Project</button>
+</header>
+
+<div class="app">
+
+  <aside class="sidebar">
+    <button class="nav active" data-page="characters">👤 Characters</button>
+    <button class="nav" data-page="scenes">🎞️ Scenes</button>
+    <button class="nav" data-page="episodes">📺 Episodes</button>
+  </aside>
+
+  <main class="content">
+
+    <!-- CHARACTERS -->
+
+    <section id="characters" class="page active">
+
+      <div class="heading">
+        <div>
+          <h1>Characters</h1>
+          <p>Create the characters for your cartoon.</p>
+        </div>
+
+        <button id="addCharacter">＋ Add Character</button>
+      </div>
+
+      <div id="characterGrid" class="grid"></div>
+
+    </section>
+
+
+    <!-- SCENES -->
+
+    <section id="scenes" class="page">
+
+      <div class="heading">
+        <div>
+          <h1>Scenes</h1>
+          <p>Build your cartoon scenes.</p>
+        </div>
+
+        <button id="addScene">＋ Add Scene</button>
+      </div>
+
+      <div id="sceneList"></div>
+
+    </section>
+
+
+    <!-- EPISODES -->
+
+    <section id="episodes" class="page">
+
+      <div class="heading">
+        <div>
+          <h1>Episodes</h1>
+          <p>Put your scenes together into episodes.</p>
+        </div>
+
+        <button id="addEpisode">＋ Add Episode</button>
+      </div>
+
+      <div id="episodeList"></div>
+
+    </section>
+
+  </main>
+
+</div>
+
+
+<!-- MODAL -->
+
+<div id="modal" class="modal hidden">
+
+  <div class="modalBox">
+
+    <button id="closeModal" class="close">×</button>
+
+    <h2 id="modalTitle"></h2>
+
+    <form id="form"></form>
+
+  </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
